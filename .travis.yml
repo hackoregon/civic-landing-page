@@ -1,0 +1,8 @@
+deploy:
+  provider: s3
+  access_key_id: "${AWS_ACCESS_KEY}"
+  secret_access_key: "${AWS_SECRET_KEY}"
+  region: us-west-2
+  bucket: www.civicpdx.org
+  skip_cleanup: true
+  local_dir: dist
